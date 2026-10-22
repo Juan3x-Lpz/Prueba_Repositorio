@@ -1,0 +1,121 @@
+/* Fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #e6ecf3, #cfd8e3);
+  font-family: 'Orbitron', sans-serif;
+  color: #1e2a38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* CONTENEDOR DEL FORMULARIO */
+.form-container {
+  background: #ffffff;
+  border: 2px solid #007BFF;
+  box-shadow: 0 0 18px #007BFF33;
+  padding: 40px 50px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 1s ease;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #0057b7;
+  margin-bottom: 25px;
+  text-shadow: 0 0 4px #007BFF66;
+}
+
+/* ETIQUETAS */
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-size: 0.95em;
+  color: #1c2a38;
+}
+
+/* CAMPOS DE TEXTO */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #b5c7da;
+  background-color: #f5f9fc;
+  color: #1e2a38;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+input:focus {
+  border: 1px solid #007BFF;
+  box-shadow: 0 0 8px #007BFF55;
+  outline: none;
+}
+
+/* CHECKBOX */
+input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #007BFF;
+  transform: scale(1.2);
+}
+
+/* BOTÓN O ENLACE DE ACCIÓN */
+#section1 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#section1 a {
+  display: inline-block;
+  padding: 12px 25px;
+  color: white;
+  background: linear-gradient(90deg, #0057b7, #0099ff);
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 12px #007BFF88;
+  transition: all 0.3s ease-in-out;
+}
+
+#section1 a:hover {
+  background: linear-gradient(90deg, #0099ff, #0057b7);
+  box-shadow: 0 0 20px #00aaffcc;
+  transform: scale(1.05);
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 30px 20px;
+  }
+
+  #section1 a {
+    width: 100%;
+  }
+}

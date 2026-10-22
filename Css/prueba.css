@@ -1,0 +1,40 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* fondo degradado */
+    min-height: 100vh;
+  }
+  
+  /* Título centrado */
+  h1 {
+    text-align: center;
+    color: #333;
+    padding-top: 30px;
+  }
+  
+  /* Contenedor de imágenes */
+  .galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  /* Estilo de cada imagen (como tarjeta) */
+  .galeria img {
+    width: 280px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Animación al pasar el mouse */
+  .galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  }
+  
